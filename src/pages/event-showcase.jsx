@@ -10,36 +10,36 @@ import {
 export default function EventShowcase() {
   const events = [
     {
-      title: "Cultural Night 2024",
+      title: "Meditation & Mindfulness Retreat",
       date: "March 15, 2024",
-      time: "7:00 PM",
-      location: "Grand Auditorium",
+      time: "6:00 AM - 5:00 PM",
+      location: "Tranquil Ashram",
       description:
-        "Join us for an evening of diverse cultural performances, traditional music, and dance showcasing the rich heritage of various communities.",
-      img: "https://placehold.co/500x400",
+        "Immerse yourself in a day of guided meditation, breathwork, and mindfulness practices to bring inner peace and clarity.",
+      img: "https://workscounselingcenter.com/wp-content/uploads/2023/07/Meditation-Strength-Training-for-the-Mind.jpg",
     },
     {
-      title: "Dance Festival",
+      title: "Divine Chanting & Kirtan Night",
       date: "March 20, 2024",
-      time: "6:30 PM",
-      location: "City Park",
+      time: "7:00 PM",
+      location: "Sacred Temple Hall",
       description:
-        "Experience the magic of dance forms from around the world, featuring both classical and contemporary performances.",
-      img: "https://placehold.co/500x400",
+        "Experience the power of devotional chanting and soulful kirtan as we connect through sacred sounds and vibrations.",
+      img: "https://asmy.org.au/app/uploads/2022/04/Sydney-Sunday-Night-Livestream.jpg",
     },
     {
-      title: "Music Concert",
+      title: "Spiritual Awakening Satsang",
       date: "March 25, 2024",
-      time: "8:00 PM",
-      location: "Symphony Hall",
+      time: "10:00 AM",
+      location: "Lotus Spiritual Center",
       description:
-        "A mesmerizing evening of classical and fusion music performed by renowned artists from across the globe.",
-      img: "https://placehold.co/500x400",
+        "Join renowned spiritual leaders for an enlightening session on self-discovery, wisdom, and the journey to inner fulfillment.",
+      img: "https://satsang-foundation.org/wp-content/uploads/2018/10/The-Satsang-Foundation-by-Sri-M-1180x600-1180x600.jpg",
     },
   ];
 
   return (
-    <section className="bg-muted/50 py-16">
+    <section className="bg-muted/50 py-16" id="events">
       <div className="container mx-auto">
         <h2 className="mb-12 text-center text-3xl font-bold">Event Showcase</h2>
         <div className="space-y-8">
@@ -64,7 +64,9 @@ export default function EventShowcase() {
                     <p className="mb-4 text-muted-foreground">
                       {event.description}
                     </p>
-                    <Button size="lg">Get Pass</Button>
+                    <Button className="hover:bg-lime-500 hover:text-black" size="lg">
+                      Get Pass
+                    </Button>
                   </CardContent>
                 </div>
               </div>

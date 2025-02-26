@@ -25,12 +25,12 @@ export default function Hero() {
 
   return (
     <section className="container mx-auto py-12">
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-8 lg:grid-cols-2 sm:px-5">
         <div className="relative h-[600px] overflow-hidden rounded-xl">
           <img
-            src="https://placehold.co/600"
+            src="https://mavensocials.com/wp-content/uploads/2024/09/02.webp"
             alt="Cultural Events"
-            className="object-cover"
+            className="w-full h-full object-cover"
             fill
             priority
           />
@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="mt-4 space-y-4">
             {events.map((event, index) => (
               <Card key={index}>
-                <CardContent className="flex items-center justify-between p-4">
+                <CardContent className="flex items-center animate-flashGradient rounded-xl justify-between p-4">
                   <div>
                     <h3 className="font-semibold">{event.title}</h3>
                     <p className="text-sm text-muted-foreground">
