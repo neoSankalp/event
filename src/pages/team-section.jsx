@@ -36,7 +36,7 @@ export default function TeamSection() {
                   src={member.img || "/placeholder.svg"}
                   alt={member.name}
                   fill
-                  className="object-cover w-full h-full"
+                  className="object-cover object-top w-full h-full"
                 />
               </div>
               <CardHeader className="text-center">
